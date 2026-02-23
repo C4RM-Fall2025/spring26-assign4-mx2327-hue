@@ -13,4 +13,4 @@ def getBondDuration(y, face, couponRate, m, ppy=1):
         price += pv
         weighted_sum += t * pv
     duration = weighted_sum / price
-    return duration/y
+    return duration/ppy
