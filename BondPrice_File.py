@@ -1,4 +1,4 @@
-df getBondPrice(y,face,couponRate,m,ppy=1):
+def getBondPrice(y,face,couponRate,m,ppy=1):
     periods = m * ppy
     r = y / ppy
     C = coupon * face / ppy
