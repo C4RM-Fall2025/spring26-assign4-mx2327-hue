@@ -1,0 +1,11 @@
+def getBondPrice_E(face, couponRate, m, yc):
+    C = couponRate * face
+    price = 0
+    for t, y in enumerate(yc, start=1):
+        if t == m:
+            cashflow = C + face
+        else:
+            cashflow = C
+        pv = cashflow / (1 + y) ** t
+        price += pv
+    return price
